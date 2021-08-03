@@ -1,4 +1,5 @@
 'use strict'
+let score = 0;
 alert("Welcome to About Me web site")
 let userName = prompt("Could I know your name please?")
 alert("Hello " +userName+ " I hope you enjoy our web site")
@@ -39,8 +40,6 @@ function questionFunc(b){
         myPersonality = prompt("Do you think I'm cool?")
         b = myPersonality
     }
-
-    
     b= b.toLowerCase();
     // console.log(b);
     return b;
@@ -54,6 +53,7 @@ if(myBackground == "yes" || myBackground == "y"){
 }
 else if(myBackground == "no" || myBackground == "n"){
     alert("You got me "+userName+" I didn't have")
+    score +=1 
 }
 
 let myAge = prompt("Do you think I'm above 25 years old?")
@@ -61,6 +61,7 @@ myAge= yesNoloop(myAge);
 // console.log(myAge);
 if(myAge == "yes" || myAge == "y"){
     alert("That's correct "+userName)
+    score +=1 
 }
 else if(myAge == "no" || myAge == "n"){
     alert("Nop, you missed that one")
@@ -71,6 +72,7 @@ myDegree= yesNoloop(myDegree);
 // console.log(myDegree);
 if(myDegree == "yes" || myDegree == "y"){
     alert("Ooh, yes I hold")
+    score +=1 
 }
 else if(myDegree == "no" || myDegree == "n"){
     alert("sorry, but your didn't guess it")
@@ -84,6 +86,7 @@ if(myNationality == "yes" || myNationality == "y"){
 }
 else if(myNationality == "no" || myNationality == "n"){
     alert("You got me this time I'm Syrian")
+    score +=1 
 }
 
 let myPersonality = prompt("Do you think I'm cool?")
@@ -91,7 +94,63 @@ myPersonality =yesNoloop(myPersonality);
 // console.log(myPersonality);
 if(myPersonality == "yes" || myPersonality == "y"){
     alert("Thank you for that")
+    score +=1 
 }
 else if(myPersonality == "no" || myPersonality == "n"){
     alert("I hope you change your mind when you check my web site")
 }
+
+let luckNumber;
+for(let i = 1 ; i < 5 ; i++){
+    
+    luckNumber = parseInt(prompt(userName+" try to guess my luck number between 1 to 10"))
+    while(!luckNumber || luckNumber == null || luckNumber>10||luckNumber<1){
+        alert("Come on "+userName+" it's a game try to guess")
+        luckNumber = parseInt(prompt(userName+" try to guess my luck number between 1 to 10"))
+    }
+    if (luckNumber === 3){
+        alert("Yes that's right")
+        score +=1 
+        break;
+    }
+    else if(luckNumber != 3 && i==4){
+        alert("Unfortunately you didn't guess it "+userName+" the correct answer is 3")
+    }else if(luckNumber>3){
+        alert("That's too high")
+    }else if(luckNumber<3){
+        alert("That's too low")
+    }
+    console.log(luckNumber);
+}
+
+let typeMusicary = ["rock","clasic","country"]
+
+let typeOfmusic;
+for(let i = 0 ; i < 6 ; i++){
+    
+    typeOfmusic = prompt(userName+" try to guess my favorate type of music")
+    while(!typeOfmusic || typeOfmusic == null || !isNaN(Number(typeOfmusic)) ){
+        alert("Come on "+userName+" it's a game try to guess")
+        typeOfmusic = prompt(userName+" try to guess my favorate type of music")
+    }
+    typeOfmusic = typeOfmusic.toLowerCase();
+    let j
+    for(j = 0; j< typeMusicary.length;j++){
+        if (typeOfmusic == typeMusicary[j]){
+            alert("Yes that's right")
+            score +=1 
+            break;
+        
+    }}
+    if (typeOfmusic == typeMusicary[j]){
+        break;
+    }else if(i==5){
+        alert("Sorry, the correct answers is \n rock and \n clasic \n country")
+    }
+    else{
+        alert("Sorry, try again")
+    }
+    console.log(typeOfmusic);
+}
+
+alert("Your score ="+score+" out of 7")

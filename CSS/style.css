@@ -76,3 +76,36 @@ main{
     color: #EEEDE7;
     
 }
+section{
+    color: black;
+    margin-top: 1vw;
+}
+section p{
+    font-size: 1.5vw;
+    
+    text-align: center;
+
+}
+section ol li{
+    font-size: 1vw;
+    padding-top: 1vw;
+    /* margin-left: 45vw; */
+    margin-left: 6vw;
+    margin-right: 6vw;
+    
+    
+}
+section ol{
+    padding-bottom: 2vw;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* padding-left: 2vw; */
+}
+section ol img{
+    width: 16vw;
+height: 10vw;
+padding-top: 1vw;
+
+}
