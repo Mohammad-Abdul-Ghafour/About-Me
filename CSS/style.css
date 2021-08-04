@@ -108,4 +108,12 @@ section ol img{
 height: 10vw;
 padding-top: 1vw;
 
-}
+/* }
+section ol img:hover{
+    opacity: 0.3;
+    transform: scale(1.4);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+} */
