@@ -41,7 +41,7 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-main div{
+#hero{
     background-image: linear-gradient(to top, #1a1b1f, #212528);
     width: 45vw;
     margin-left: auto;
@@ -77,8 +77,11 @@ main{
     
 }
 section{
+    border: 0.5vw solid black;
+margin: 1vw 1vw;
     color: black;
     margin-top: 1vw;
+    padding: 1vw 2vw;
 }
 section p{
     font-size: 1.5vw;
@@ -90,8 +93,8 @@ section ol li{
     font-size: 1vw;
     padding-top: 1vw;
     /* margin-left: 45vw; */
-    margin-left: 6vw;
-    margin-right: 6vw;
+    /* margin-left: 6vw;
+    margin-right: 6vw; */
     
     
 }
@@ -102,6 +105,12 @@ section ol{
     justify-content: space-between;
     flex-wrap: wrap;
     /* padding-left: 2vw; */
+}
+section div{
+    margin-left: 0vw;
+}
+section div li{
+    text-align: center;
 }
 section ol img{
     width: 16vw;
