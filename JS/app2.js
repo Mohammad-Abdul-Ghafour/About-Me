@@ -57,7 +57,7 @@ else if(myBackground == "no" || myBackground == "n"){
     score +=1 
 }}
 f1();
-let mtAge;
+let myAge;
 function f2(){
 myAge = prompt("Do you think I'm above 25 years old?")
 myAge= yesNoloop(myAge);
