@@ -57,8 +57,9 @@ else if(myBackground == "no" || myBackground == "n"){
     score +=1 
 }}
 f1();
+let mtAge;
 function f2(){
-let myAge = prompt("Do you think I'm above 25 years old?")
+myAge = prompt("Do you think I'm above 25 years old?")
 myAge= yesNoloop(myAge);
 // console.log(myAge);
 if(myAge == "yes" || myAge == "y"){
@@ -69,8 +70,9 @@ else if(myAge == "no" || myAge == "n"){
     alert("Nop, you missed that one")
 }}
 f2();
+let myDegree;
 function f3(){
-let myDegree = prompt("Where do you think I hold bachelor degree?")
+myDegree = prompt("Where do you think I hold bachelor degree?")
 myDegree= yesNoloop(myDegree);
 // console.log(myDegree);
 if(myDegree == "yes" || myDegree == "y"){
@@ -81,8 +83,9 @@ else if(myDegree == "no" || myDegree == "n"){
     alert("sorry, but your didn't guess it")
 }}
 f3();
+let myNationality;
 function f4(){
-let myNationality = prompt("Do you thing I'm from Jordan?")
+myNationality = prompt("Do you thing I'm from Jordan?")
 myNationality =yesNoloop(myNationality);
 // console.log(myNationality);
 if(myNationality == "yes" || myNationality == "y"){
@@ -93,8 +96,9 @@ else if(myNationality == "no" || myNationality == "n"){
     score +=1 
 }}
 f4();
+let myPersonality;
 function f5(){
-let myPersonality = prompt("Do you think I'm cool?")
+myPersonality = prompt("Do you think I'm cool?")
 myPersonality =yesNoloop(myPersonality);
 // console.log(myPersonality);
 if(myPersonality == "yes" || myPersonality == "y"){
